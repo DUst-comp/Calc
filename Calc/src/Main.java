@@ -2,10 +2,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        boolean i = true;
 
-        while (i) {
+        /* Задача при написании данной программы:
+         * Сделать калькулятор. Он должен принимать одно из 4 арифметических действий
+         * после 2 числа и выводить результат, а затем спрашивать о желании выйти или продолжить.
+         *
+         * Операция должна получаться именно через scanner.next() */
+
+        Scanner scanner = new Scanner(System.in); // Подключаем сканер
+        boolean i = true; // Переменная для проверки желания выйти из программы
+
+        while (i) { // цикл
             System.out.print("Введите знак операции: ");
             String operation = scanner.next();
 
